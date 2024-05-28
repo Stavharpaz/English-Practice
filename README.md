@@ -1,24 +1,15 @@
-```markdown
 ## Common European Framework of Reference (CEFR)
 
 The Common European Framework of Reference (CEFR) is widely used to describe the achievements of foreign language learners across Europe and increasingly in other countries. The CEFR describes language proficiency in reading, writing, listening, and speaking on a six-level scale:
 
-- A1 (Beginner)
-- A2 (Elementary)
-- B1 (Intermediate)
-- B2 (Upper Intermediate)
-- C1 (Advanced)
-- C2 (Proficient)
+- **A1 (Beginner)**
+- **A2 (Elementary)**
+- **B1 (Intermediate)**
+- **B2 (Upper Intermediate)**
+- **C1 (Advanced)**
+- **C2 (Proficient)**
 
 Each level is defined by a set of descriptors explaining what the learner should be able to do in reading, listening, speaking, and writing. For example, a B2 speaker can discuss and understand complex topics, while a C1 speaker can perform complex tasks related to work and study.
-
-When using CEFR levels:
-- Users at level A1 is classified as **Beginner**.
-- Users at level A2 is classified as **Beginner+**.
-- Users at level B1 is classified as **Intermediate**.
-- Users at level B2 is classified as **Intermediate+**.
-- Users at level C1 is classified as **Expert**.
-- Users at level C2 is classified as **Expert+**.
 
 ### Data Analysis and Feature Engineering
 
@@ -35,13 +26,26 @@ These data contain English sentences and their classification according to the a
 
 **Gradient Boosting** has proven effective in categorizing texts by CEFR levels due to its ability to iteratively refine its predictions. The model works by creating a series of decision trees, where each tree aims to correct the errors of the preceding trees, thus improving overall accuracy. This iterative refinement process makes Gradient Boosting particularly suitable for assessing text readability as it captures subtle features of linguistic complexity, such as lexical density and syntactic variation. As a result, the model's ability to improve its performance over multiple iterations ensures accurate classification of texts into their appropriate CEFR levels. This advantage significantly contributes to language education and automated text assessment.
 
+### CEFR Level Classifications
+
+When using CEFR levels:
+- Users at level **A1** are classified as **Beginner**.
+- Users at level **A2** are classified as **Beginner+**.
+- Users at level **B1** are classified as **Intermediate**.
+- Users at level **B2** are classified as **Intermediate+**.
+- Users at level **C1** are classified as **Expert**.
+- Users at level **C2** are classified as **Expert+**.
+
 ### Project Screens
 
 **Registration Screen**
 - A registration screen that allows users to access all options for a full experience on the site.
 
 **Login Screen**
-- A login screen divided into three main components: the first for registered users, the second for users who haven't registered yet and want a preview of the content, and the third for new users who want to sign up for the site.
+- A login screen divided into three main components:
+  1. For registered users.
+  2. For users who haven't registered yet and want a preview of the content.
+  3. For new users who want to sign up for the site.
 
 **Home Page**
 - The main page of the site where users can view explanations about the scoring system and English levels. Additionally, users can choose an area of interest and start a conversation with the chatbot. Users can also translate unfamiliar words and listen to their pronunciation.
@@ -53,4 +57,3 @@ These data contain English sentences and their classification according to the a
 
 **Words Table**
 - The words table is divided into three columns where the primary keys (pk) are the `word` and `userEmail`.
-```
